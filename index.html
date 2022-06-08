@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+ <header>
+
+ </header>
+<body>
+    <div class="sidebar">
+        <div class="logoContent">
+            <div class="logo">
+                <i class='bx bx-bowl-rice'></i>
+                <div class="title">My Portfolio</div>
+            </div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>   
+        <ul class="navList">
+            <li>
+                
+                <i class='bx bx-search-alt-2'></i>
+                   <input type="text" placeholder="Search..">
+                
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-grid-alt'></i>
+                    <span class="linkName" > Dashboard</span>
+                    
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-hand'></i>
+                    <span class="linkName" > Skills</span>
+                </a>
+              <span class="tooltip">Skills</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-conversation'></i>
+                    <span class="linkName" > Message</span>
+                </a>
+                <span class="tooltip">Message</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="linkName" > Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+        </ul>
+        <div class="profileContent">
+            <div class="profile">
+                <div class="profileDetail">
+                    <div class="nameAndJob">
+                        <div class="name">Ryan Begonia</div>
+                        <div class="job">Web developer</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="logOut"></i>
+            </div>
+        </div>
+    </div>
+    <div class="homeContent">
+        <div class="text">Home Content</div>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search-alt-2");
+
+        btn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+        searchBtn.onclick = function() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
